@@ -1,0 +1,48 @@
+{
+  "schema_version": "2",
+  "source_info": {
+    "name": "fangfuzha 的应用源",
+    "author": "fangfuzha",
+    "homepage": "https://github.com/fangfuzha",
+    "description": "自研飞牛 NAS 应用的第三方应用源"
+  },
+  "apps": {
+    "Mihomo": {
+      "display_name": "Mihomo 代理",
+      "desc": "在飞牛 NAS 上运行 Mihomo 内核的本地代理应用。支持订阅管理、节点切换与策略组选择，并可让 NAS 本机出站流量（下载中心、Docker 拉镜像、系统更新）走代理；局域网设备也能把本机当代理使用。",
+      "platform": [
+        "arm",
+        "x86"
+      ],
+      "categories": [
+        "系统工具"
+      ],
+      "icon_url": "./assets/Mihomo.png",
+      "readme_url": "https://github.com/fangfuzha/fnOS-Mihomo/blob/main/README.md",
+      "bug_report_url": "https://github.com/fangfuzha/fnOS-Mihomo/issues",
+      "maintainer": "fangfuzha",
+      "maintainer_url": "https://github.com/fangfuzha/fnOS-Mihomo",
+      "distributor": "fangfuzha",
+      "distributor_url": "https://github.com/fangfuzha/fnOS-Mihomo",
+      "run_as": "root",
+      "install_type": "root",
+      "is_docker": false,
+      "service_port": "8765",
+      "releases": {
+        "1.0.0": {
+          "changelog": "首个版本：Mihomo 内核本地代理。支持订阅链接管理（vless/vmess/trojan/ss/hysteria2/tuic）、节点与策略组切换、国内直连国外代理的分流规则、NAS 本机出站流量接管（TUN 模式，不改动飞牛自身防火墙规则）；面板可设置访问密码，未设置时保持免登录。",
+          "updated_at": "2026-11-26T13:07:13+08:00",
+          "os_min_version": "0.9.0",
+          "packages": {
+            "arm": {
+              "download_url": "https://github.com/fangfuzha/fnOS-Mihomo/releases/download/v1.0.0/Mihomo-1.0.0-arm64.fpk"
+            },
+            "x86": {
+              "download_url": "https://github.com/fangfuzha/fnOS-Mihomo/releases/download/v1.0.0/Mihomo-1.0.0-x86.fpk"
+            }
+          }
+        }
+      }
+    }
+  }
+}
