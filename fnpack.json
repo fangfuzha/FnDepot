@@ -31,14 +31,18 @@
       "releases": {
         "1.0.0": {
           "changelog": "首个版本：Mihomo 内核本地代理。支持订阅链接管理（vless/vmess/trojan/ss/hysteria2/tuic）、节点与策略组切换、国内直连国外代理的分流规则、NAS 本机出站流量接管（TUN 模式，不改动飞牛自身防火墙规则）；面板可设置访问密码，未设置时保持免登录。",
-          "updated_at": "2026-11-26T13:07:13+08:00",
+          "updated_at": "2026-11-26T06:07:36+00:00",
           "os_min_version": "0.9.0",
           "packages": {
             "arm": {
-              "download_url": "https://github.com/fangfuzha/fnOS-Mihomo/releases/download/v1.0.0/Mihomo-1.0.0-arm64.fpk"
+              "download_url": "https://github.com/fangfuzha/fnOS-Mihomo/releases/download/v1.0.0/Mihomo-1.0.0-arm64.fpk",
+              "sha256": "2d386e4dbd3128790f26a9bbc87500a323c58d838bf09358f40c3f5e1256943a",
+              "size": 50698944
             },
             "x86": {
-              "download_url": "https://github.com/fangfuzha/fnOS-Mihomo/releases/download/v1.0.0/Mihomo-1.0.0-x86.fpk"
+              "download_url": "https://github.com/fangfuzha/fnOS-Mihomo/releases/download/v1.0.0/Mihomo-1.0.0-x86.fpk",
+              "sha256": "102bcd7c07f8457164034c99dca765e8c1b2bbc7bfb0d1ee2a2d4a52ec94849b",
+              "size": 52922738
             }
           }
         }
